@@ -5,7 +5,7 @@ const AddTransaction = () => {
     const [text,setText] = useState('');
     const [amount,setAmount] = useState('');
     const {addTransaction} = useContext(GlobalContext);
-
+const [description, setDescription] = useState('');
     const onSubmit =(e)=>{
         e.preventDefault();
         if(text.trim()===''||amount === '') return;
